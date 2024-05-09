@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/12.png</file>
+        <file>image/QQ.png</file>
+        <file>image/bg-lock.png</file>
+        <file>image/安全.png</file>
+        <file>image/QQ-01.png</file>
+        <file>image/关闭.png</file>
+        <file>image/最小化.png</file>
+        <file>image/@2x密码不显示.png</file>
+        <file>image/密码显示.png</file>
+        <file>image/错误.png</file>
+        <file>image/正确.png</file>
+        <file>image/菜单.png</file>
+        <file>image/加好友.png</file>
+        <file>image/听歌.png</file>
+        <file>image/游戏_填充.png</file>
+        <file>image/云空间.png</file>
+        <file>image/退出.png</file>
+        <file>image/QQ-1.png</file>
+        <file>image/用户.png</file>
+        <file>image/等级.png</file>
+        <file>image/重要等级.png</file>
+        <file>image/等级星星.png</file>
+        <file>image/QQ空间.png</file>
+        <file>image/ic_聊天.png</file>
+        <file>image/上传.png</file>
+        <file>image/profileImage.png</file>
+        <file>image/QQ空间1.png</file>
+        <file>image/呆.png</file>
+        <file>image/图片.png</file>
+        <file>image/文件.png</file>
+        <file>image/振动.png</file>
+        <file>image/更多.png</file>
+        <file>image/搜索.png</file>
+        <file>image/发起群聊.png</file>
+        <file>image/没有通知.png</file>
+        <file>image/编辑.png</file>
+        <file>image/群主.png</file>
+    </qresource>
+</RCC>
