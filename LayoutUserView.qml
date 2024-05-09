@@ -17,7 +17,7 @@ ColumnLayout {
 
     Rectangle {  //上
         Layout.fillWidth: true
-        Layout.preferredHeight: 200
+        Layout.preferredHeight: Screen.height/1067*200
         color: "lightblue"
 
         ColumnLayout {
@@ -26,7 +26,7 @@ ColumnLayout {
 
             Item {  //菜单栏
                 Layout.fillWidth: true
-                Layout.preferredHeight: 35
+                Layout.preferredHeight: Screen.height/1067*35
 
                 RowLayout {
                     anchors.fill: parent
@@ -38,11 +38,11 @@ ColumnLayout {
                     }
 
                     Item {
-                        Layout.preferredWidth: 18
+                        Layout.preferredWidth: Screen.width/1707*18
                     }
                     Item {
-                        height: 35
-                        width: 40
+                        height: Screen.height/1067*35
+                        width: Screen.width/1707*40
                         Image {
                             anchors.fill: parent
                             source: "qrc:/image/QQ-01.png"
@@ -56,8 +56,8 @@ ColumnLayout {
                         Layout.fillHeight: true
                     }
                     Item{
-                        height: 35
-                        width: 40
+                        height: Screen.height/1067*35
+                        width: Screen.width/1707*40
                         MyToolButton {
                             iconSource: "qrc:/image/最小化.png"
                             icon.color: "white"
@@ -67,8 +67,8 @@ ColumnLayout {
                         }
                     }
                     Item {
-                        height: 35
-                        width: 40
+                        height: Screen.height/1067*35
+                        width: Screen.width/1707*40
                         MyToolButton {
                             iconSource: "qrc:/image/关闭.png"
                             icon.color: "white"
@@ -94,8 +94,8 @@ ColumnLayout {
 
                         MyProfileImage {
                             id: myProfileImage
-                            width: 100
-                            height: 100
+                            width: Screen.height/1067*100
+                            height: Screen.height/1067*100
                             anchors.centerIn: parent
                             imgSrc: main_ProfileImage
                             imageHeight: main_ProfileImage==="qrc:/image/profileImage.png" ? height*0.75:height
@@ -123,12 +123,12 @@ ColumnLayout {
 
                     Item {  //个性签名
                         Layout.fillHeight: true
-                        Layout.preferredWidth: 300
+                        Layout.preferredWidth: Screen.width/1707*300
 
                         Item {
                             anchors.verticalCenter: parent.verticalCenter
-                            width: 240
-                            height: 60
+                            width: Screen.width/1707*240
+                            height: Screen.height/1067*60
 
                             Text {
                                 id: userName
@@ -164,7 +164,7 @@ ColumnLayout {
 
     Rectangle {  //中
         Layout.fillWidth: true
-        Layout.preferredHeight: 540
+        Layout.preferredHeight: Screen.height/1067*540
 
         ColumnLayout {  //底端菜单窗口
             id: menu
@@ -176,8 +176,8 @@ ColumnLayout {
                 Layout.fillHeight: true
             }
             Item {
-                Layout.preferredHeight: 200
-                Layout.preferredWidth: 240
+                Layout.preferredHeight: Screen.height/1067*200
+                Layout.preferredWidth: Screen.width/1707*240
                 MyMenuView {
                     id: myMenuView
                     visible: false
@@ -191,24 +191,24 @@ ColumnLayout {
 
             Item {  //菜单栏
                 Layout.fillWidth: true
-                Layout.preferredHeight: 60
+                Layout.preferredHeight: Screen.height/1067*60
 
                 MyShapeLine {  //底下那根可以切换的线
                     id: lineSwitch
                     lineColor: "lightblue"
                     lineWidth: 2.5
                     lineStartX: 20
-                    lineStartY: 60
+                    lineStartY: Screen.height/1067*60
                     lineEndX: 80
-                    lineEndY: 60
+                    lineEndY: Screen.height/1067*60
                 }
 
                 MyShapeLine {  //底下那根线
                     lineOpacity: 0.1
                     lineStartX: 0
-                    lineStartY: 60
+                    lineStartY: Screen.height/1067*60
                     lineEndX: window.width
-                    lineEndY: 60
+                    lineEndY: Screen.height/1067*60
                 }
 
                 RowLayout {
@@ -327,7 +327,7 @@ ColumnLayout {
 
             Item {  //消息列表
                 Layout.fillWidth: true
-                Layout.preferredHeight: 480
+                Layout.preferredHeight: Screen.height/1067*480
 
                 Item {
                     anchors.fill: parent
@@ -341,7 +341,7 @@ ColumnLayout {
 
     Rectangle {  //下
         Layout.fillWidth: true
-        Layout.preferredHeight: 60
+        Layout.preferredHeight: Screen.height/1067*60
 
         MyShapeLine {  //上面那根线
             lineOpacity: 0.1
@@ -357,7 +357,7 @@ ColumnLayout {
 
             Item {
                 Layout.fillHeight: true
-                Layout.preferredWidth: 80
+                Layout.preferredWidth: Screen.width/1707*80
 
                 MyToolButton {
                     id: menuButton
@@ -377,7 +377,7 @@ ColumnLayout {
             }
             Item {
                 Layout.fillHeight: true
-                Layout.preferredWidth: 80
+                Layout.preferredWidth: Screen.width/1707*80
                 MyToolButton {
                     iconSource: "qrc:/image/加好友.png"
                     icon.height: 32
@@ -392,7 +392,7 @@ ColumnLayout {
             }
             Item {
                 Layout.fillHeight: true
-                Layout.preferredWidth: 80
+                Layout.preferredWidth: Screen.width/1707*80
                 MyToolButton {
                     iconSource: "qrc:/image/发起群聊.png"
                     icon.height: 32
@@ -409,7 +409,7 @@ ColumnLayout {
             }
             Item {
                 Layout.fillHeight: true
-                Layout.preferredWidth: 80
+                Layout.preferredWidth: Screen.width/1707*80
                 MyToolButton {
                     iconSource: "qrc:/image/听歌.png"
                     icon.height: 32
@@ -420,7 +420,7 @@ ColumnLayout {
             }
             Item {
                 Layout.fillHeight: true
-                Layout.preferredWidth: 80
+                Layout.preferredWidth: Screen.width/1707*80
                 MyToolButton {
                     iconSource: "qrc:/image/云空间.png"
                     icon.height: 32

@@ -23,7 +23,7 @@ Window {
 
         Rectangle {  //关闭栏
             Layout.fillWidth: true
-            Layout.preferredHeight: 35
+            Layout.preferredHeight: Screen.height/1067*35
             color: "lightblue"
 
             RowLayout {
@@ -36,11 +36,11 @@ Window {
                 }
 
                 Item {
-                    Layout.preferredWidth: 18
+                    Layout.preferredWidth: Screen.width/1707*18
                 }
                 Item {
-                    height: 35
-                    width: 40
+                    height: Screen.height/1067*35
+                    width: Screen.width/1707*40
                     Image {
                         anchors.fill: parent
                         source: "qrc:/image/QQ-01.png"
@@ -54,8 +54,8 @@ Window {
                     Layout.fillHeight: true
                 }
                 Item{
-                    height: 35
-                    width: 40
+                    height: Screen.height/1067*35
+                    width: Screen.width/1707*40
                     MyToolButton {
                         iconSource: "qrc:/image/最小化.png"
                         icon.color: "white"
@@ -65,8 +65,8 @@ Window {
                     }
                 }
                 Item {
-                    height: 35
-                    width: 40
+                    height: Screen.height/1067*35
+                    width: Screen.width/1707*40
                     MyToolButton {
                         iconSource: "qrc:/image/关闭.png"
                         icon.color: "white"
@@ -88,7 +88,7 @@ Window {
 
                 Item {
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 15
+                    Layout.preferredWidth: Screen.width/1707*15
                 }
                 Item {  //基础信息
                     Layout.fillHeight: true
@@ -100,7 +100,7 @@ Window {
 
                         Item {  //基础信息
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 40
+                            Layout.preferredHeight: Screen.height/1067*40
                             Text {
                                 text: "基础信息"
                                 font {
@@ -113,12 +113,12 @@ Window {
                         }
                         Item {  //线
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 10
+                            Layout.preferredHeight: Screen.height/1067*10
                             MenuSeparator { width: parent.width; padding: 0 }
                         }
                         Item {  //昵称 性别
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 50
+                            Layout.preferredHeight: Screen.height/1067*50
 
                             RowLayout {
                                 anchors.fill: parent
@@ -185,7 +185,7 @@ Window {
                         }
                         Item {  //属相 血型
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 50
+                            Layout.preferredHeight: Screen.height/1067*50
 
                             RowLayout {
                                 anchors.fill: parent
@@ -318,13 +318,13 @@ Window {
                 }
                 Item {
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 15
+                    Layout.preferredWidth: Screen.width/1707*15
                 }
             }
         }
 
         Rectangle {  //保存，关闭按钮
-            Layout.preferredHeight: 40
+            Layout.preferredHeight: Screen.height/1067*40
             Layout.fillWidth: true
             color: "#e2e1e4"
             opacity: 0.5
@@ -339,7 +339,7 @@ Window {
                 }
                 Item {  //确定按钮
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 100
+                    Layout.preferredWidth: Screen.width/1707*100
                     Item{
                         width: parent.width
                         height: parent.height*0.6
@@ -385,11 +385,11 @@ Window {
                 }
                 Item {
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 20
+                    Layout.preferredWidth: Screen.width/1707*20
                 }
                 Item {  //取消按钮
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 100
+                    Layout.preferredWidth: Screen.width/1707*100
                     Item{
                         width: parent.width
                         height: parent.height*0.6
@@ -468,7 +468,7 @@ Window {
                 }
                 Item {
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 15
+                    Layout.preferredWidth: Screen.width/1707*15
                 }
             }
         }  //end 保存，取消按钮

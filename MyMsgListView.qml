@@ -93,7 +93,7 @@ Item {
                 font.pointSize: 12
                 wrapMode: Text.WrapAnywhere
                 lineHeight: 1.4
-                width: 500  //设置最长宽度
+                width: Screen.width/1707*500  //设置最长宽度
             }
 
             height: testText.contentHeight+50  //弹性变化
@@ -106,7 +106,7 @@ Item {
                 /* 非本人发的消息 */
                 Item {  //头像
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 70
+                    Layout.preferredWidth: Screen.width/1707*70
                     visible: isMyMsg==="true"? false:true
                     ColumnLayout {
                         anchors.fill: parent
@@ -114,11 +114,11 @@ Item {
 
                         Item {
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 5
+                            Layout.preferredHeight: Screen.height/1067*5
                         }
                         MyProfileImage {
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 70
+                            Layout.preferredHeight: Screen.height/1067*70
                             imgSrc: friendProfileImage
                             imageHeight: friendProfileImage==="qrc:/image/profileImage.png" ? 50*0.75:50
                             imageWidth: friendProfileImage==="qrc:/image/profileImage.png" ? 50*0.75:50
@@ -147,7 +147,7 @@ Item {
                             spacing: 0
 
                             Item {
-                                Layout.preferredHeight: 11
+                                Layout.preferredHeight: Screen.height/1067*11
                                 Layout.fillWidth: true
                             }
                             Item {
@@ -166,7 +166,7 @@ Item {
                                 }
                             }
                             Item {
-                                Layout.preferredHeight: 5
+                                Layout.preferredHeight: Screen.height/1067*5
                                 Layout.fillWidth: true
                             }
                         }
@@ -191,7 +191,7 @@ Item {
                             spacing: 0
 
                             Item {
-                                Layout.preferredHeight: 11
+                                Layout.preferredHeight: Screen.height/1067*11
                                 Layout.fillWidth: true
                             }
                             Item {
@@ -210,7 +210,7 @@ Item {
                                 }
                             }
                             Item {
-                                Layout.preferredHeight: 5
+                                Layout.preferredHeight: Screen.height/1067*5
                                 Layout.fillWidth: true
                             }
                         }
@@ -218,7 +218,7 @@ Item {
                 }
                 Item {  //头像
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 70
+                    Layout.preferredWidth: Screen.width/1707*70
                     visible: isMyMsg==="true"? true:false
                     ColumnLayout {
                         anchors.fill: parent
@@ -226,11 +226,11 @@ Item {
 
                         Item {
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 5
+                            Layout.preferredHeight: Screen.height/1067*5
                         }
                         MyProfileImage {
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 70
+                            Layout.preferredHeight: Screen.height/1067*70
                             imgSrc: main_ProfileImage
                             imageHeight: main_ProfileImage==="qrc:/image/profileImage.png" ? 50*0.75:50
                             imageWidth: main_ProfileImage==="qrc:/image/profileImage.png" ? 50*0.75:50

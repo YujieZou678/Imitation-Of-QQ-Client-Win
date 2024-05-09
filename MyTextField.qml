@@ -10,7 +10,7 @@ import QtQuick.Shapes
 TextField {
 
     property string myText: "这个人很懒......"  //提示语
-    property int myWidth: 250
+    property int myWidth: Screen.width/1707*250
     property int rightExtend: 0  //线往右延长
 
     id: accountNumber

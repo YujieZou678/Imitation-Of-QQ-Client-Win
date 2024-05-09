@@ -66,8 +66,8 @@ Window {
                                 MyProfileImage {
                                     id: myProfileImage
                                     imgSrc: main_ProfileImage
-                                    width: 100
-                                    height: 100
+                                    width: Screen.height/1067*100
+                                    height: Screen.height/1067*100
                                     imageHeight: main_ProfileImage==="qrc:/image/profileImage.png" ? height*0.75:height*0.93
                                     imageWidth: main_ProfileImage==="qrc:/image/profileImage.png" ? width*0.75:width*0.93
                                     anchors.centerIn: parent
@@ -98,7 +98,7 @@ Window {
                                 Item {
                                     anchors.verticalCenter: parent.verticalCenter
                                     width: parent.width
-                                    height: 60
+                                    height: Screen.height/1067*60
 
                                     Text {
                                         id: userName
@@ -117,7 +117,7 @@ Window {
                                         width: parent.width
                                         text: main_PersonalSignature
                                         anchors.top: userName.bottom
-                                        anchors.topMargin: 15
+                                        anchors.topMargin: Screen.height/1067*15
                                         font {
                                             pointSize: 13
                                             family: mFONT_FAMILY
@@ -142,7 +142,7 @@ Window {
 
                 Item {
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 20
+                    Layout.preferredWidth: Screen.width/1707*20
                 }
                 Item {  //中间
                     Layout.fillHeight: true
@@ -154,11 +154,11 @@ Window {
 
                         Item {
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 50
+                            Layout.preferredHeight: Screen.height/1067*50
                         }
                         Item {  //qq号
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 40
+                            Layout.preferredHeight: Screen.height/1067*40
 
                             RowLayout {
                                 anchors.fill: parent
@@ -166,7 +166,7 @@ Window {
 
                                 Item {  //qq号图标
                                     Layout.fillHeight: true
-                                    Layout.preferredWidth: 40
+                                    Layout.preferredWidth: Screen.width/1707*40
                                     Image {
                                         height: parent.height*0.7
                                         width: parent.height*0.7
@@ -176,7 +176,7 @@ Window {
                                 }
                                 Item {  //qq号
                                     Layout.fillHeight: true
-                                    Layout.preferredWidth: 100
+                                    Layout.preferredWidth: Screen.width/1707*100
                                     Text {
                                         text: main_AccountNumber
                                         font {
@@ -192,7 +192,7 @@ Window {
                                 }
                                 Item {  //编辑资料
                                     Layout.fillHeight: true
-                                    Layout.preferredWidth: 70
+                                    Layout.preferredWidth: Screen.width/1707*70
                                     Text {
                                         text: "编辑资料"
                                         anchors.verticalCenter: parent.verticalCenter
@@ -218,7 +218,7 @@ Window {
                         }
                         Item {  //属相
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 40
+                            Layout.preferredHeight: Screen.height/1067*40
 
                             RowLayout {
                                 anchors.fill: parent
@@ -226,7 +226,7 @@ Window {
 
                                 Item {  //属相图标
                                     Layout.fillHeight: true
-                                    Layout.preferredWidth: 40
+                                    Layout.preferredWidth: Screen.width/1707*40
                                     Image {
                                         source: "qrc:/image/用户.png"
                                         height: parent.height*0.7
@@ -250,7 +250,7 @@ Window {
                         }
                         Item {  //等级
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 40
+                            Layout.preferredHeight: Screen.height/1067*40
 
                             RowLayout {
                                 anchors.fill: parent
@@ -258,7 +258,7 @@ Window {
 
                                 Item {  //等级图标
                                     Layout.fillHeight: true
-                                    Layout.preferredWidth: 40
+                                    Layout.preferredWidth: Screen.width/1707*40
                                     Image {
                                         source: "qrc:/image/重要等级.png"
                                         height: parent.height*0.7
@@ -276,7 +276,7 @@ Window {
 
                                         Item {  //等级图标1
                                             Layout.fillHeight: true
-                                            Layout.preferredWidth: 32
+                                            Layout.preferredWidth: Screen.width/1707*32
 
                                             Image {
                                                 height: parent.height*0.7
@@ -287,7 +287,7 @@ Window {
                                         }
                                         Item {  //等级图标2
                                             Layout.fillHeight: true
-                                            Layout.preferredWidth: 32
+                                            Layout.preferredWidth: Screen.width/1707*32
                                             Image {
                                                 height: parent.height*0.7
                                                 width: parent.height*0.7
@@ -297,7 +297,7 @@ Window {
                                         }
                                         Item {  //等级图标3
                                             Layout.fillHeight: true
-                                            Layout.preferredWidth: 32
+                                            Layout.preferredWidth: Screen.width/1707*32
                                             Image {
                                                 height: parent.height*0.7
                                                 width: parent.height*0.7
@@ -315,7 +315,7 @@ Window {
                         }
                         Item {  //空间
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 40
+                            Layout.preferredHeight: Screen.height/1067*40
 
                             RowLayout {
                                 anchors.fill: parent
@@ -323,7 +323,7 @@ Window {
 
                                 Item {  //空间图标
                                     Layout.fillHeight: true
-                                    Layout.preferredWidth: 40
+                                    Layout.preferredWidth: Screen.width/1707*40
                                     Image {
                                         source: "qrc:/image/QQ空间.png"
                                         height: parent.height*0.7
@@ -347,12 +347,12 @@ Window {
                         }
                         Item {  //分割线1
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 12
+                            Layout.preferredHeight: Screen.height/1067*12
                             MenuSeparator { width: parent.width; anchors.centerIn: parent }
                         }
                         Item {  //Q龄
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 40
+                            Layout.preferredHeight: Screen.height/1067*40
 
                             RowLayout {
                                 anchors.fill: parent
@@ -360,7 +360,7 @@ Window {
 
                                 Item {  //Q龄图标
                                     Layout.fillHeight: true
-                                    Layout.preferredWidth: 40
+                                    Layout.preferredWidth: Screen.width/1707*40
                                     Image {
                                         source: "qrc:/image/ic_聊天.png"
                                         height: parent.height*0.7
@@ -370,7 +370,7 @@ Window {
                                 }
                                 Item {  //Q龄
                                     Layout.fillHeight: true
-                                    Layout.preferredWidth: 85
+                                    Layout.preferredWidth: Screen.width/1707*85
                                     Text {
                                         text: "Q龄"
                                         anchors.verticalCenter: parent.verticalCenter
@@ -397,7 +397,7 @@ Window {
                         }
                         Item {  //血型
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 40
+                            Layout.preferredHeight: Screen.height/1067*40
 
                             RowLayout {
                                 anchors.fill: parent
@@ -405,11 +405,11 @@ Window {
 
                                 Item {
                                     Layout.fillHeight: true
-                                    Layout.preferredWidth: 40
+                                    Layout.preferredWidth: Screen.width/1707*40
                                 }
                                 Item {  //血型
                                     Layout.fillHeight: true
-                                    Layout.preferredWidth: 85
+                                    Layout.preferredWidth: Screen.width/1707*85
                                     Text {
                                         text: "血型"
                                         anchors.verticalCenter: parent.verticalCenter
@@ -436,7 +436,7 @@ Window {
                         }
                         Item {  //分割线2
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 12
+                            Layout.preferredHeight: Screen.height/1067*12
                             MenuSeparator { width: parent.width; anchors.centerIn: parent }
                         }
                         Item {  //照片墙
@@ -449,7 +449,7 @@ Window {
 
                                 Item {  //照片墙
                                     Layout.fillWidth: true
-                                    Layout.preferredHeight: 40
+                                    Layout.preferredHeight: Screen.height/1067*40
                                     Text {
                                         text: "照片墙"
                                         anchors.verticalCenter: parent.verticalCenter
@@ -470,7 +470,7 @@ Window {
                                 }
                                 Item {
                                     Layout.fillWidth: true
-                                    Layout.preferredHeight: 10
+                                    Layout.preferredHeight: Screen.height/1067*10
                                 }
                             }
                         }
@@ -478,7 +478,7 @@ Window {
                 }  //end 中间
                 Item {
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 20
+                    Layout.preferredWidth: Screen.width/1707*20
                 }
             }
         }
@@ -491,7 +491,7 @@ Window {
         Item {
             y: 10
             Layout.fillWidth: true
-            Layout.preferredHeight: 35
+            Layout.preferredHeight: Screen.height/1067*35
 
             RowLayout {
                 anchors.fill: parent
@@ -503,11 +503,11 @@ Window {
                 }
 
                 Item {
-                    Layout.preferredWidth: 18
+                    Layout.preferredWidth: Screen.width/1707*18
                 }
                 Item {
-                    height: 35
-                    width: 40
+                    height: Screen.height/1067*35
+                    width: Screen.width/1707*40
                     Image {
                         anchors.fill: parent
                         source: "qrc:/image/QQ-01.png"
@@ -521,8 +521,8 @@ Window {
                     Layout.fillHeight: true
                 }
                 Item{
-                    height: 35
-                    width: 40
+                    height: Screen.height/1067*35
+                    width: Screen.width/1707*40
                     MyToolButton {
                         iconSource: "qrc:/image/最小化.png"
                         icon.color: "gray"
@@ -532,8 +532,8 @@ Window {
                     }
                 }
                 Item {
-                    height: 35
-                    width: 40
+                    height: Screen.height/1067*35
+                    width: Screen.width/1707*40
                     MyToolButton {
                         iconSource: "qrc:/image/关闭.png"
                         icon.color: "gray"

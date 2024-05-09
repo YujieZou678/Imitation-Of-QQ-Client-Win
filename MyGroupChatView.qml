@@ -44,7 +44,7 @@ Window {
 
         Rectangle {  //拖动栏
             Layout.fillWidth: true
-            Layout.preferredHeight: 35
+            Layout.preferredHeight: Screen.height/1067*35
             color: "lightblue"
 
             RowLayout {
@@ -57,11 +57,11 @@ Window {
                 }
 
                 Item {
-                    Layout.preferredWidth: 18
+                    Layout.preferredWidth: Screen.width/1707*18
                 }
                 Item {
-                    height: 35
-                    width: 40
+                    height: Screen.height/1067*35
+                    width: Screen.width/1707*40
                     Image {
                         anchors.fill: parent
                         source: "qrc:/image/QQ-01.png"
@@ -70,7 +70,7 @@ Window {
                         opacity: 0.8
                     }
                 }
-                Item { width: 22 }
+                Item { width: Screen.width/1707*22 }
                 Item {  //聊天对象
                     Layout.fillWidth: true
                     Layout.fillHeight: true
@@ -86,12 +86,12 @@ Window {
                     }
                     Item {  //空间图标
                         height: parent.height
-                        width: 30
+                        width: Screen.width/1707*30
                         anchors.left: objText.right
                         Image {
                             id: editGroup
-                            height: 17
-                            width: 17
+                            height: Screen.height/1067*17
+                            width: Screen.width/1707*17
                             source: "qrc:/image/编辑.png"
                             anchors.centerIn: parent
                             MouseArea {
@@ -118,8 +118,8 @@ Window {
                     }
                 }
                 Item{
-                    height: 35
-                    width: 40
+                    height: Screen.height/1067*35
+                    width: Screen.width/1707*40
                     MyToolButton {
                         iconSource: "qrc:/image/最小化.png"
                         icon.color: "white"
@@ -129,8 +129,8 @@ Window {
                     }
                 }
                 Item {
-                    height: 35
-                    width: 40
+                    height: Screen.height/1067*35
+                    width: Screen.width/1707*40
                     MyToolButton {
                         iconSource: "qrc:/image/关闭.png"
                         icon.color: "white"
@@ -151,7 +151,7 @@ Window {
 
                 Item {  //聊天框
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 700
+                    Layout.preferredWidth: Screen.width/1707*700
                     ColumnLayout {
                         anchors.fill: parent
                         spacing: 0
@@ -166,7 +166,7 @@ Window {
                         }
                         Rectangle {  //发送消息框
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 180
+                            Layout.preferredHeight: Screen.height/1067*180
 
                             ColumnLayout {
                                 anchors.fill: parent
@@ -174,19 +174,19 @@ Window {
 
                                 Item {  //线
                                     Layout.fillWidth: true
-                                    Layout.preferredHeight: 5
+                                    Layout.preferredHeight: Screen.height/1067*5
                                     MenuSeparator { width: parent.width; padding: 0 }
                                 }
                                 Item {  //菜单栏
                                     Layout.fillWidth: true
-                                    Layout.preferredHeight: 35
+                                    Layout.preferredHeight: Screen.height/1067*35
                                     RowLayout {
                                         anchors.fill: parent
                                         spacing: 0
 
                                         Item {  //表情
                                             Layout.fillHeight: true
-                                            Layout.preferredWidth: 40
+                                            Layout.preferredWidth: Screen.width/1707*40
                                             MyToolButton {
                                                 iconSource: "qrc:/image/呆.png"
                                                 clickColor: "#00000000"
@@ -194,7 +194,7 @@ Window {
                                         }
                                         Item {  //文件
                                             Layout.fillHeight: true
-                                            Layout.preferredWidth: 40
+                                            Layout.preferredWidth: Screen.width/1707*40
                                             MyToolButton {
                                                 iconSource: "qrc:/image/文件.png"
                                                 clickColor: "#00000000"
@@ -202,7 +202,7 @@ Window {
                                         }
                                         Item {  //图片
                                             Layout.fillHeight: true
-                                            Layout.preferredWidth: 40
+                                            Layout.preferredWidth: Screen.width/1707*40
                                             MyToolButton {
                                                 iconSource: "qrc:/image/图片.png"
                                                 clickColor: "#00000000"
@@ -210,7 +210,7 @@ Window {
                                         }
                                         Item {  //振动
                                             Layout.fillHeight: true
-                                            Layout.preferredWidth: 40
+                                            Layout.preferredWidth: Screen.width/1707*40
                                             MyToolButton {
                                                 iconSource: "qrc:/image/振动.png"
                                                 clickColor: "#00000000"
@@ -219,7 +219,7 @@ Window {
                                         }
                                         Item {  //更多
                                             Layout.fillHeight: true
-                                            Layout.preferredWidth: 40
+                                            Layout.preferredWidth: Screen.width/1707*40
                                             MyToolButton {
                                                 iconSource: "qrc:/image/更多.png"
                                                 clickColor: "#00000000"
@@ -257,7 +257,7 @@ Window {
                                 }
                                 Item {  //关闭，发送按钮
                                     Layout.fillWidth: true
-                                    Layout.preferredHeight: 50
+                                    Layout.preferredHeight: Screen.height/1067*50
 
                                     RowLayout {
                                         anchors.fill: parent
@@ -269,9 +269,9 @@ Window {
                                         }
                                         Item {  //关闭
                                             Layout.fillHeight: true
-                                            Layout.preferredWidth: 100
+                                            Layout.preferredWidth: Screen.width/1707*100
                                             Item {
-                                                width: 85
+                                                width: Screen.width/1707*85
                                                 height: parent.height*0.6
                                                 anchors.centerIn: parent
                                                 MyToolButton {
@@ -292,9 +292,9 @@ Window {
                                         }
                                         Item {  //发送
                                             Layout.fillHeight: true
-                                            Layout.preferredWidth: 100
+                                            Layout.preferredWidth: Screen.width/1707*100
                                             Item {
-                                                width: 85
+                                                width: Screen.width/1707*85
                                                 height: parent.height*0.6
                                                 anchors.centerIn: parent
                                                 MyToolButton {
@@ -359,7 +359,7 @@ Window {
                 }
                 Item {  //群栏
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 200
+                    Layout.preferredWidth: Screen.width/1707*200
 
                     RowLayout {
                         anchors.fill: parent
@@ -379,13 +379,13 @@ Window {
 
                                 Rectangle {  //群号
                                     Layout.fillWidth: true
-                                    Layout.preferredHeight: 50
+                                    Layout.preferredHeight: Screen.height/1067*50
                                     RowLayout {
                                         anchors.fill: parent
                                         spacing: 0
                                         Rectangle {
                                             Layout.fillHeight: true
-                                            Layout.preferredWidth: 60
+                                            Layout.preferredWidth: Screen.width/1707*60
                                             Text {
                                                 text: "群号"
                                                 font {
@@ -414,13 +414,13 @@ Window {
                                         }
                                         Item {
                                             Layout.fillHeight: true
-                                            Layout.preferredWidth: 50
+                                            Layout.preferredWidth: Screen.width/1707*50
                                         }
                                     }
                                 }
                                 Rectangle {  //群通知
                                     Layout.fillWidth: true
-                                    Layout.preferredHeight: 200
+                                    Layout.preferredHeight: Screen.height/1067*200
                                     ColumnLayout {
                                         anchors.fill: parent
                                         spacing: 0
@@ -432,7 +432,7 @@ Window {
                                                 spacing: 0
                                                 Item {
                                                     Layout.fillHeight: true
-                                                    Layout.preferredWidth: 60
+                                                    Layout.preferredWidth: Screen.width/1707*60
                                                     Text {
                                                         text: "群通知"
                                                         font {
@@ -453,8 +453,8 @@ Window {
                                             Layout.fillWidth: true
                                             Layout.fillHeight: true
                                             Image {
-                                                width: 40
-                                                height: 40
+                                                width: Screen.width/1707*40
+                                                height: Screen.height/1067*40
                                                 anchors.centerIn: parent
                                                 source: "qrc:/image/没有通知.png"
                                             }
@@ -474,7 +474,7 @@ Window {
                                         }
                                         Item {  //群成员
                                             Layout.fillWidth: true
-                                            Layout.preferredHeight: 40
+                                            Layout.preferredHeight: Screen.height/1067*40
                                             Text {
                                                 text: "群成员"
                                                 font {
@@ -496,19 +496,19 @@ Window {
                                                 anchors.fill: parent
                                                 clip: true
                                                 delegate: Item {
-                                                    height: 40
+                                                    height: Screen.height/1067*40
                                                     width: listView.width
                                                     RowLayout {
                                                         anchors.fill: parent
                                                         spacing: 0
                                                         Item {
                                                             Layout.fillHeight: true
-                                                            Layout.preferredWidth: 10+40
+                                                            Layout.preferredWidth: Screen.width/1707*(10+40)
                                                             MyProfileImage {  //头像
                                                                 x: 10
                                                                 imgSrc: profileImage
-                                                                width: 35
-                                                                height: 35
+                                                                width: Screen.height/1067*35
+                                                                height: Screen.height/1067*35
                                                                 imageHeight: profileImage==="qrc:/image/profileImage.png" ? height*0.75:height
                                                                 imageWidth: profileImage==="qrc:/image/profileImage.png" ? width*0.75:width
                                                                 anchors.verticalCenter: parent.verticalCenter
@@ -528,10 +528,10 @@ Window {
                                                         }
                                                         Item {  //群用户图像
                                                             Layout.fillHeight: true
-                                                            Layout.preferredWidth: 40
+                                                            Layout.preferredWidth: Screen.width/1707*40
                                                             Image {
-                                                                width: 35
-                                                                height: 35
+                                                                width: Screen.height/1067*35
+                                                                height: Screen.height/1067*35
                                                                 scale: 0.8
                                                                 anchors.centerIn: parent
                                                                 source: {

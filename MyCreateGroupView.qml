@@ -9,8 +9,8 @@ import QtQuick.Layouts
 
 Window {
     id: self
-    width: Screen.width/1707*400
-    height: Screen.height/1067*150
+    width: 400
+    height: 150
     flags: Qt.Window|Qt.FramelessWindowHint  //无边框全套处理
 
     ColumnLayout {
@@ -19,7 +19,7 @@ Window {
 
         Rectangle {  //拖动栏
             Layout.fillWidth: true
-            Layout.preferredHeight: 35
+            Layout.preferredHeight: Screen.height/1067*35
             color: "lightblue"
 
             RowLayout {
@@ -35,7 +35,7 @@ Window {
                     Layout.preferredWidth: 18
                 }
                 Item {
-                    height: 35
+                    height: Screen.height/1067*35
                     width: 40
                     Image {
                         anchors.fill: parent
@@ -61,7 +61,7 @@ Window {
                     }
                 }
                 Item{
-                    height: 35
+                    height: Screen.height/1067*35
                     width: 40
                     MyToolButton {
                         iconSource: "qrc:/image/最小化.png"
@@ -72,7 +72,7 @@ Window {
                     }
                 }
                 Item {
-                    height: 35
+                    height: Screen.height/1067*35
                     width: 40
                     MyToolButton {
                         iconSource: "qrc:/image/关闭.png"
@@ -111,7 +111,7 @@ Window {
                     Layout.fillWidth: true
                     Item {
                         width: parent.width*0.9
-                        height: 50
+                        height: Screen.height/1067*50
                         anchors.centerIn: parent
                         RowLayout {
                             anchors.fill: parent

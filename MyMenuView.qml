@@ -31,7 +31,7 @@ Rectangle {
         }
         Rectangle {  //设置
             Layout.fillWidth: true
-            Layout.preferredHeight: 63
+            Layout.preferredHeight: Screen.height/1067*63
             color: "#00000000"
             opacity: 0.7
             MouseArea {
@@ -58,7 +58,7 @@ Rectangle {
                 }
                 Item {
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 175
+                    Layout.preferredWidth: Screen.width/1707*175
                     Text {
                         text: "设置"
                         anchors.verticalCenter: parent.verticalCenter
@@ -73,7 +73,7 @@ Rectangle {
         }
         Rectangle {  //关于QQ
             Layout.fillWidth: true
-            Layout.preferredHeight: 63
+            Layout.preferredHeight: Screen.height/1067*63
             opacity: 0.7
             MouseArea {
                 anchors.fill: parent
@@ -95,7 +95,7 @@ Rectangle {
                 }
                 Item {
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 175
+                    Layout.preferredWidth: Screen.width/1707*175
                     Text {
                         text: "关于QQ"
                         anchors.verticalCenter: parent.verticalCenter
@@ -111,7 +111,7 @@ Rectangle {
         MenuSeparator { Layout.fillWidth: true }
         Rectangle {  //退出
             Layout.fillWidth: true
-            Layout.preferredHeight: 63
+            Layout.preferredHeight: Screen.height/1067*63
             opacity: 0.7
             MouseArea {
                 anchors.fill: parent
@@ -136,15 +136,15 @@ Rectangle {
                     Layout.fillHeight: true
 
                     Image {
-                        width: 28
-                        height: 28
+                        width: Screen.height/1067*28
+                        height: Screen.height/1067*28
                         anchors.centerIn: parent
                         source: "qrc:/image/退出.png"
                     }
                 }
                 Item {
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 175
+                    Layout.preferredWidth: Screen.width/1707*175
 
                     Text {
                         text: "退出"

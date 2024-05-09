@@ -84,7 +84,7 @@ Item {
         id: listViewDelegate
         Rectangle {
             id: listViewDelegateItem
-            height: 480/5
+            height: Screen.height/1067*480/5
             width: listView.width
             color: "#00000000"
 
@@ -213,11 +213,11 @@ Item {
 
                 Item {  //头像
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 110
+                    Layout.preferredWidth: Screen.width/1707*110
 
                     MyProfileImage {
-                        width: 80
-                        height: 80
+                        width: Screen.width/1707*80
+                        height: Screen.width/1707*80
                         anchors.centerIn: parent
                         imgSrc: profileImage
                         imageHeight: profileImage==="qrc:/image/profileImage.png" ? height*0.75:height
@@ -226,11 +226,11 @@ Item {
                 }
                 Item {  //消息介绍/描述
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 290
+                    Layout.preferredWidth: Screen.width/1707*290
 
                     Item {
                         width: parent.width
-                        height: 60
+                        height: Screen.height/1067*60
                         anchors.verticalCenter: parent.verticalCenter
 
                         ColumnLayout {
@@ -239,7 +239,7 @@ Item {
 
                             Item {  //第一排信息
                                 Layout.fillWidth: true
-                                Layout.preferredHeight: 40
+                                Layout.preferredHeight: Screen.height/1067*40
 
                                 RowLayout {
                                     anchors.fill: parent
@@ -274,10 +274,10 @@ Item {
 
                             Item {  //第二排信息
                                 Layout.fillWidth: true
-                                Layout.preferredHeight: 20
+                                Layout.preferredHeight: Screen.height/1067*20
 
                                 Text {
-                                    width: 280
+                                    width: Screen.width/1707*280
                                     text: {
                                         if (sendMsgNumber !== main_AccountNumber) {
                                             /* 不是自己发的 */

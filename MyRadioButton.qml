@@ -18,8 +18,8 @@ RadioButton {
     id: self
     indicator: Rectangle {
         id: myIndicator
-        width: 20
-        height: 20
+        width: Screen.width/1707*20
+        height: Screen.height/1067*20
         radius: 100
         border.color: "#b2bbbe"
         anchors.verticalCenter: parent.verticalCenter
@@ -48,8 +48,8 @@ RadioButton {
         }
 
         Rectangle {
-            width: 10
-            height: 10
+            width: Screen.width/1707*10
+            height: Screen.height/1067*10
             anchors.centerIn: parent
             radius: 100
             color: "#619ac3"

@@ -28,17 +28,17 @@ ColumnLayout {
     spacing: 0
 
     Item {  //上半部分
-        Layout.preferredHeight: 205
+        Layout.preferredHeight: Screen.height/1067*205
         Layout.fillWidth: true
 
         Rectangle {
             id: topView
             width: parent.width
-            height: 160
+            height: Screen.height/1067*160
             color: "lightblue"
 
             Item {  //菜单栏
-                height: 35
+                height: Screen.height/1067*35
                 width: parent.width
 
                 RowLayout {
@@ -51,11 +51,11 @@ ColumnLayout {
                     }
 
                     Item {
-                        Layout.preferredWidth: 18
+                        Layout.preferredWidth: Screen.width/1707*18
                     }
                     Item {
-                        height: 35
-                        width: 40
+                        height: Screen.height/1067*35
+                        width: Screen.width/1707*40
                         Image {
                             anchors.fill: parent
                             source: "qrc:/image/QQ-01.png"
@@ -69,8 +69,8 @@ ColumnLayout {
                         Layout.fillHeight: true
                     }
                     Item{
-                        height: 35
-                        width: 40
+                        height: Screen.height/1067*35
+                        width: Screen.width/1707*40
                         MyToolButton {
                             iconSource: "qrc:/image/最小化.png"
                             icon.color: "white"
@@ -80,8 +80,8 @@ ColumnLayout {
                         }
                     }
                     Item {
-                        height: 35
-                        width: 40
+                        height: Screen.height/1067*35
+                        width: Screen.width/1707*40
                         MyToolButton {
                             iconSource: "qrc:/image/关闭.png"
                             icon.color: "white"
@@ -96,11 +96,11 @@ ColumnLayout {
 
         MyProfileImage {
             id: centerView
-            width: 100
-            height: 100
+            width: Screen.height/1067*100
+            height: Screen.height/1067*100
             anchors {
                 top: topView.bottom
-                topMargin: -55
+                topMargin: -Screen.height/1067*55
                 horizontalCenter: parent.horizontalCenter
             }
             imgSrc: profileImage
@@ -129,7 +129,7 @@ ColumnLayout {
             spacing: 0
 
             Item {  //左一
-                Layout.preferredWidth: 80
+                Layout.preferredWidth: Screen.width/1707*80
                 Layout.fillHeight: true
 
                 ColumnLayout {
@@ -141,7 +141,7 @@ ColumnLayout {
                         Layout.fillHeight: true
                     }
                     Item {
-                        Layout.preferredHeight: 35
+                        Layout.preferredHeight: Screen.height/1067*35
                         Layout.fillWidth: true
                         Text {
                             text: "登陆账号"
@@ -175,8 +175,8 @@ ColumnLayout {
                             Layout.fillWidth: true
                         }
                         Item {
-                            Layout.preferredHeight: 30
-                            Layout.preferredWidth: 30
+                            Layout.preferredHeight: Screen.height/1067*30
+                            Layout.preferredWidth: Screen.width/1707*30
                             Image {
                                 anchors.fill: parent
                                 source: accountNumberImage
@@ -221,8 +221,8 @@ ColumnLayout {
                             Layout.fillWidth: true
                         }
                         Item {
-                            Layout.preferredHeight: 30
-                            Layout.preferredWidth: 30
+                            Layout.preferredHeight: Screen.height/1067*30
+                            Layout.preferredWidth: Screen.width/1707*30
                             Image {
                                 anchors.fill: parent
                                 source: passWordImage
@@ -232,8 +232,8 @@ ColumnLayout {
                         MyTextField {
                             id: passWord
                             myText: "密码(字母数字最长15个字符)"
-                            myWidth: 220
-                            rightExtend: 30
+                            myWidth: Screen.width/1707*220
+                            rightExtend: Screen.width/1707*30
                             echoMode: myShowPasswordImage.showPassWord ? TextInput.Normal:TextInput.Password
                             validator: RegularExpressionValidator {
                                 regularExpression: /\w{6,15}/
@@ -261,8 +261,8 @@ ColumnLayout {
                             }
                         }
                         Item {
-                            Layout.preferredHeight: 30
-                            Layout.preferredWidth: 30
+                            Layout.preferredHeight: Screen.height/1067*30
+                            Layout.preferredWidth: Screen.width/1707*30
                             MyShowPasswordImage {
                                 id: myShowPasswordImage
                             }
@@ -279,8 +279,8 @@ ColumnLayout {
                             Layout.fillWidth: true
                         }
                         Item {
-                            Layout.preferredHeight: 30
-                            Layout.preferredWidth: 30
+                            Layout.preferredHeight: Screen.height/1067*30
+                            Layout.preferredWidth: Screen.width/1707*30
                             Image {
                                 anchors.fill: parent
                                 source: passWordImage
@@ -317,8 +317,8 @@ ColumnLayout {
                             Layout.fillWidth: true
                         }
                         Item {
-                            Layout.preferredWidth: 275
-                            Layout.preferredHeight: 15
+                            Layout.preferredWidth: Screen.width/1707*275
+                            Layout.preferredHeight: Screen.height/1067*15
 
                             MyRadioButton {
                                 id: myRadioButton
@@ -351,11 +351,11 @@ ColumnLayout {
                                 radius: 3
                             }
 
-                            implicitHeight: 40
-                            implicitWidth: 280
+                            implicitHeight: Screen.height/1067*40
+                            implicitWidth: Screen.width/1707*280
                             icon.source: "qrc:/image/安全.png"
-                            icon.height: 18
-                            icon.width: 18
+                            icon.height: Screen.height/1067*18
+                            icon.width: Screen.height/1067*18
                             icon.color: "#ffffff"
 
                             onClicked: {
@@ -399,7 +399,7 @@ ColumnLayout {
             }
 
             Item {  //左三
-                Layout.preferredWidth: 80
+                Layout.preferredWidth: Screen.width/1707*80
                 Layout.fillHeight: true
 
                 ColumnLayout {
@@ -407,28 +407,28 @@ ColumnLayout {
                     spacing: 0
 
                     Item {
-                        Layout.preferredHeight: 30
-                        Layout.preferredWidth: 30
+                        Layout.preferredHeight: Screen.height/1067*30
+                        Layout.preferredWidth: Screen.width/1707*30
                         MyCheckImage {
                             id: checkAccountNumber
                         }
                     }
                     Item {
-                        Layout.preferredHeight: 30
-                        Layout.preferredWidth: 30
+                        Layout.preferredHeight: Screen.height/1067*30
+                        Layout.preferredWidth: Screen.width/1707*30
                         MyCheckImage {
                             id: checkPassWord1
                         }
                     }
                     Item {
-                        Layout.preferredHeight: 30
-                        Layout.preferredWidth: 30
+                        Layout.preferredHeight: Screen.height/1067*30
+                        Layout.preferredWidth: Screen.width/1707*30
                         MyCheckImage {
                             id: checkPassWord2
                         }
                     }
                     Item {
-                        Layout.preferredHeight: 45
+                        Layout.preferredHeight: Screen.height/1067*45
                     }
                 }
             }

@@ -34,7 +34,7 @@ Window {
 
         Rectangle {  //拖动栏
             Layout.fillWidth: true
-            Layout.preferredHeight: 35
+            Layout.preferredHeight: Screen.height/1067*35
             color: "lightblue"
 
             RowLayout {
@@ -47,11 +47,11 @@ Window {
                 }
 
                 Item {
-                    Layout.preferredWidth: 18
+                    Layout.preferredWidth: Screen.width/1707*18
                 }
                 Item {
-                    height: 35
-                    width: 40
+                    height: Screen.height/1067*35
+                    width: Screen.width/1707*40
                     Image {
                         anchors.fill: parent
                         source: "qrc:/image/QQ-01.png"
@@ -65,8 +65,8 @@ Window {
                     Layout.fillHeight: true
                 }
                 Item{
-                    height: 35
-                    width: 40
+                    height: Screen.height/1067*35
+                    width: Screen.width/1707*40
                     MyToolButton {
                         iconSource: "qrc:/image/最小化.png"
                         icon.color: "white"
@@ -76,8 +76,8 @@ Window {
                     }
                 }
                 Item {
-                    height: 35
-                    width: 40
+                    height: Screen.height/1067*35
+                    width: Screen.width/1707*40
                     MyToolButton {
                         iconSource: "qrc:/image/关闭.png"
                         icon.color: "white"
@@ -98,7 +98,7 @@ Window {
 
                 Item {
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 25
+                    Layout.preferredWidth: Screen.width/1707*25
                 }
                 Item {  //中间内容
                     Layout.fillWidth: true
@@ -110,16 +110,16 @@ Window {
 
                         Item {  //上传本地照片按钮
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 80
+                            Layout.preferredHeight: Screen.height/1067*80
 
                             Item {  //上传本地照片按钮
                                 anchors.verticalCenter: parent.verticalCenter
-                                width: 150
-                                height: 40
+                                width: Screen.width/1707*150
+                                height: Screen.height/1067*40
                                 MyToolButton {
                                     iconSource: "qrc:/image/上传.png"
-                                    iconWidth: 30
-                                    iconHeight: 30
+                                    iconWidth: Screen.height/1067*30
+                                    iconHeight: Screen.height/1067*30
                                     clickColor: "#e2e1e4"
                                     opacity: 0.6
                                     bacColor: "white"
@@ -158,23 +158,23 @@ Window {
                                 imageHeight: imgSrc==="qrc:/image/profileImage.png" ? height*0.75:height
                                 imageWidth: imgSrc==="qrc:/image/profileImage.png" ? width*0.75:width
                                 imgSrc: main_ProfileImage
-                                imgRadius: 450
+                                imgRadius: Screen.height/1067*450
                             }
                         }
                         Item {
                             Layout.fillWidth: true
-                            Layout.preferredHeight: 20
+                            Layout.preferredHeight: Screen.height/1067*20
                         }
                     }
                 }
                 Item {
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 25
+                    Layout.preferredWidth: Screen.width/1707*25
                 }
             }
         }
         Rectangle {  //确定按钮
-            Layout.preferredHeight: 40
+            Layout.preferredHeight: Screen.height/1067*40
             Layout.fillWidth: true
             color: "#e2e1e4"
             opacity: 0.5
@@ -189,7 +189,7 @@ Window {
                 }
                 Item {  //确定按钮
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 100
+                    Layout.preferredWidth: Screen.width/1707*100
                     Item{
                         width: parent.width
                         height: parent.height*0.6
@@ -244,11 +244,11 @@ Window {
                 }
                 Item {
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 20
+                    Layout.preferredWidth: Screen.width/1707*20
                 }
                 Item {  //取消按钮
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 100
+                    Layout.preferredWidth: Screen.width/1707*100
                     Item{
                         width: parent.width
                         height: parent.height*0.6
@@ -270,7 +270,7 @@ Window {
                 }
                 Item {
                     Layout.fillHeight: true
-                    Layout.preferredWidth: 15
+                    Layout.preferredWidth: Screen.width/1707*15
                 }
             }
         }

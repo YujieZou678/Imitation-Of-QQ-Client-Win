@@ -13,7 +13,7 @@ Rectangle {
 
     property real imageHeight: self.height*0.75
     property real imageWidth: self.width*0.75
-    property int imgRadius: 100
+    property int imgRadius: Screen.height/1067*100
 
     id: self
     radius: imgRadius
@@ -33,7 +33,7 @@ Rectangle {
         id: mask
         color: "black"
         anchors.fill: parent
-        radius: imgRadius
+        radius: imgRadius*0.75
         antialiasing: true  //抗锯齿
         visible: false
     }

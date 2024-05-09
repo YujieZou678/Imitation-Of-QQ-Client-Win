@@ -9,8 +9,8 @@ import QtQuick.Controls
 ToolButton {
 
     property string iconSource: ""
-    property int iconHeight: 40
-    property int iconWidth: 40
+    property int iconHeight: Screen.height/1067*40
+    property int iconWidth: Screen.height/1067*40
 
     property string clickColor: "#f07c82"
     property string bacColor: "#00000000"  //背景色

@@ -9,8 +9,8 @@ import QtQuick.Layouts
 
 Window {
     id: self
-    width: Screen.width/1707*400
-    height: Screen.height/1067*450
+    width: 400
+    height: 450
     flags: Qt.Window|Qt.FramelessWindowHint  //无边框全套处理
 
     ColumnLayout {
